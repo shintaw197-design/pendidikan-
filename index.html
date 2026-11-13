@@ -1,1 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lentera Ilmu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <h2>LenteraIlmu</h2>
+
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#materi">Materi</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+                <li><a href="#kontak">Hubungi Kami</a></li>
+            </ul>
+
+            <a href="#materi" class="pesan">Mulai Belajar</a>
+        </nav>
+    </header>
+
+    <!-- BERANDA -->
+    <section class="hero" id="beranda">
+
+        <div class="hero-text">
+            <h1>Belajar Menjadi Lebih Mudah</h1>
+
+            <p>
+                Lentera Ilmu merupakan tempat belajar
+                untuk menambah pengetahuan dan wawasan.
+                Temukan berbagai materi pembelajaran
+                yang menarik dan bermanfaat untuk masa depan.
+            </p>
+
+            <a href="#materi" class="tombol">Mulai Sekarang</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="lentera ilmu.jpeg"
+                 alt="Kegiatan belajar siswa">
+        </div>
+
+    </section>
+
+    <!-- PILIHAN MATERI -->
+    <section class="materi" id="materi">
+
+        <h2>Pilihan Materi</h2>
+        <p class="subtitle">
+            Berbagai materi pembelajaran untuk menambah ilmu dan wawasan.
+        </p>
+
+        <div class="materi-container">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?w=500"
+                     alt="Matematika">
+                <h3>Matematika</h3>
+                <p>Belajar angka, rumus, dan cara menyelesaikan soal perhitungan.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=500"
+                     alt="Bahasa Indonesia">
+                <h3>Bahasa Indonesia</h3>
+                <p>Mempelajari membaca, menulis, dan memahami berbagai teks.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500"
+                     alt="Informatika">
+                <h3>Informatika</h3>
+                <p>Mengenal komputer, pemrograman, dan teknologi digital.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1543109740-4bdb38fda756?w=500"
+                     alt="Bahasa Inggris">
+                <h3>Bahasa Inggris</h3>
+                <p>Meningkatkan kemampuan berbicara dan memahami bahasa Inggris.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=500"
+                     alt="Literasi">
+                <h3>Literasi</h3>
+                <p>Menambah wawasan dan pengetahuan melalui kegiatan membaca.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=500"
+                     alt="Pengetahuan Umum">
+                <h3>Pengetahuan Umum</h3>
+                <p>Mengenal berbagai informasi dan ilmu pengetahuan baru.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- GALERI -->
+    <section class="galeri" id="galeri">
+
+        <h2>Galeri Pendidikan</h2>
+        <p class="subtitle">
+            Beberapa kegiatan dalam dunia pendidikan.
+        </p>
+
+        <div class="galeri-container">
+
+            <div class="foto">
+                <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600"
+                     alt="Belajar di kelas">
+                <h3>Belajar di Kelas</h3>
+            </div>
+
+            <div class="foto">
+                <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=600"
+                     alt="Perpustakaan">
+                <h3>Membaca Buku</h3>
+            </div>
+
+            <div class="foto">
+                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600"
+                     alt="Diskusi kelompok">
+                <h3>Diskusi Kelompok</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+<!-- TABEL PILIHAN MATERI -->
+<section class="pilih-materi" id="pilih-materi">
+
+    <h2>Pilih Materi Pembelajaran</h2>
+    <p class="subtitle">
+        Silakan isi data dan pilih materi yang ingin kamu pelajari.
+    </p>
+
+    <div class="form-box">
+
+        <form action="#" method="post">
+
+            <div class="input-group">
+                <label>Nama Siswa</label>
+                <input type="text" placeholder="Masukkan nama kamu" required>
+            </div>
+
+            <div class="input-group">
+                <label>Kelas</label>
+                <input type="text" placeholder="Masukkan kelas kamu" required>
+            </div>
+
+            <h3>Daftar Materi</h3>
+
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama Materi</th>
+                        <th>Keterangan</th>
+                        <th>Pilih</th>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Matematika</td>
+                        <td>Angka dan Perhitungan</td>
+                        <td><input type="checkbox" name="materi" value="Matematika"></td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Bahasa Indonesia</td>
+                        <td>Membaca dan Menulis</td>
+                        <td><input type="checkbox" name="materi" value="Bahasa Indonesia"></td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Informatika</td>
+                        <td>Komputer dan Teknologi</td>
+                        <td><input type="checkbox" name="materi" value="Informatika"></td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Bahasa Inggris</td>
+                        <td>Belajar Bahasa Inggris</td>
+                        <td><input type="checkbox" name="materi" value="Bahasa Inggris"></td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>Literasi</td>
+                        <td>Membaca dan Pengetahuan</td>
+                        <td><input type="checkbox" name="materi" value="Literasi"></td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td>Pengetahuan Umum</td>
+                        <td>Informasi dan Wawasan</td>
+                        <td><input type="checkbox" name="materi" value="Pengetahuan Umum"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <button type="submit" class="btn-pilih">
+                Kirim Pilihan
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+    <!-- FOOTER -->
+    <footer id="kontak">
+
+        <div class="footer-container">
+
+            <div>
+                <h3>Contact Us</h3>
+                <p>Email: lenterailmu@gmail.com</p>
+                <p>WA: 085xxxxxxxxx</p>
+                <p>Location: Mojokerto,Jawa Timur</p>
+            </div>
+
+            <div>
+                <h3>LenteraIlmu</h3>
+                <p>Menerangi Masa Depan dengan Ilmu</p>
+                <p>Tempat Belajar dan Menambah Wawasan.</p>
+            </div>
+
+            <div>
+                <h3>Informasi</h3>
+                <p>Beranda</p>
+                <p>Pilihan Materi</p>
+                <p>Galeri Pendidikan</p>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 Lentera Ilmu | Website Pendidikan
+        </div>
+
+    </footer>
+
+</body>
+  </html>
