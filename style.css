@@ -1,1 +1,404 @@
+/* PENGATURAN DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #ffffff;
+    color: #45576a;
+}
+
+/* NAVBAR */
+header {
+    background: #bcdcf5;
+    padding: 18px 7%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h2 {
+    color: #356b99;
+    font-size: 23px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+}
+
+.navbar ul a {
+    text-decoration: none;
+    color: #40546b;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.pesan {
+    background: #ffe7a3;
+    padding: 10px 16px;
+    border-radius: 20px;
+    color: #45576a;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* BERANDA */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    padding: 40px 9%;
+    background: #edf6ff;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero-text h1 {
+    color: #477da9;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.tombol {
+    display: inline-block;
+    background: #ffe7a3;
+    padding: 11px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #45576a;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.hero-image {
+    width: 50%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* PILIHAN MATERI */
+.materi {
+    padding: 30px 8% 45px;
+    text-align: center;
+}
+
+.materi h2,
+.galeri h2 {
+    color: #477da9;
+    font-size: 27px;
+}
+
+.subtitle {
+    font-size: 13px;
+    margin: 10px 0 25px;
+}
+
+.materi-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.card {
+    background: #fff2cf;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 135px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.card h3 {
+    color: #477da9;
+    margin: 12px 0 8px;
+    font-size: 16px;
+}
+
+.card p {
+    font-size: 12px;
+    line-height: 1.6;
+    padding-bottom: 8px;
+}
+
+/* GALERI */
+.galeri {
+    background: #edf6ff;
+    padding: 40px 8%;
+    text-align: center;
+}
+
+.galeri-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.foto {
+    background: white;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.foto img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.foto h3 {
+    color: #477da9;
+    margin-top: 10px;
+    font-size: 15px;
+}
+ 
+/* TABEL PILIHAN MATERI */
+.pilih-materi {
+    padding: 45px 8%;
+    background: #ffffff;
+    text-align: center;
+}
+
+.pilih-materi h2 {
+    color: #477da9;
+    font-size: 27px;
+}
+
+.form-box {
+    background: #edf6ff;
+    padding: 25px;
+    border-radius: 15px;
+    margin-top: 25px;
+    text-align: left;
+}
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #477da9;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bcdcf5;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+.input-group input:focus {
+    border-color: #477da9;
+}
+
+.form-box h3 {
+    color: #477da9;
+    margin: 25px 0 15px;
+}
+
+/* TABEL */
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th {
+    background: #bcdcf5;
+    color: #355f82;
+    padding: 13px 10px;
+}
+
+td {
+    padding: 13px 10px;
+    text-align: center;
+    border-bottom: 1px solid #e4eaf0;
+    font-size: 13px;
+}
+
+tr:nth-child(even) {
+    background: #fff8e6;
+}
+
+td input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    accent-color: #477da9;
+    cursor: pointer;
+}
+
+/* TOMBOL */
+.btn-pilih {
+    display: block;
+    margin: 25px auto 0;
+    padding: 12px 28px;
+    background: #477da9;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-pilih:hover {
+    background: #356b99;
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 600px) {
+
+    .form-box {
+        padding: 15px;
+    }
+
+    table {
+        min-width: 500px;
+    }
+
+    th, td {
+        padding: 11px 8px;
+    }
+
+    .pilih-materi {
+        padding: 35px 5%;
+    }
+}
+
+
+
+
+
+
+
+
+/* FOOTER */
+footer {
+    background: #bcdcf5;
+    padding: 30px 8% 15px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.footer-container h3 {
+    color: #356b99;
+    margin-bottom: 12px;
+    font-size: 17px;
+}
+
+.footer-container p {
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid #a6c9e7;
+    margin-top: 25px;
+    padding-top: 15px;
+    font-size: 12px;
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .pesan {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 30px 7%;
+    }
+
+    .hero-text,
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 27px;
+    }
+
+    .hero-image img {
+        height: 210px;
+    }
+
+    .materi-container,
+    .galeri-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
+@media (max-width: 400px) {
+    .materi-container,
+    .galeri-container {
+        grid-template-columns: 1fr;
+    }
+}
